@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data</title>
+  </head>
+  <body>
+    <form action="register.html" method="get">
+      <div>
+        <label for="lastname">Овог</label><br />
+        <input
+          id="lastname"
+          name="ovog"
+          type="text"
+          placeholder="Нэрээ оруулна уу"
+        />
+      </div>
+
+      <div>
+        <label for="firstname">Нэр</label><br />
+        <input id="firstname" name="ner" type="text" />
+      </div>
+
+      <div>
+        <label for="email">Имэйл</label><br />
+        <input id="email" name="email" type="email" />
+      </div>
+
+      <div>
+        <label for="password">Нууц Үг</label><br />
+        <input id="password" name="pass" type="password" />
+      </div>
+
+      <div>
+        <input id="forgot" type="checkbox" />
+        <label for="forgot">Нууц Үг санах</label>
+      </div>
+
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Эр</label>
+
+        <input type="radio" id="female" name="genders" value="female" />
+        <label for="female">Эм</label>
+      </div>
+
+      <div>
+        <label for="color">Өнгө сонго</label>
+        <input id="color" name="color" type="color" />
+      </div>
+
+      <div>
+        <label for="forgot">Огноо</label>
+        <input id="forgot" name="date" type="date" />
+      </div>
+
+      <div>
+        <label for="location">Дүүрэг</label>
+        <select name="location" id="location">
+          <option value="">Сүхбаатар</option>
+          <option value="">Хан-Уул</option>
+          <option value="">Чингэлтэй</option>
+          <option value="">Баянзүрх</option>
+          <option value="">Сонгино хайрхан</option>
+        </select>
+      </div>
+
+      <div>
+        <textarea
+          name="desctiption"
+          id="desc"
+          cols="30"
+          rows="10"
+          placeholder="Сэтгэгдэл оруулах"
+        ></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+  </body>
+</html>
