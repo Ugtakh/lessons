@@ -3,9 +3,16 @@
   padding: 0;
 }
 .cc {
-  background-color: aqua;
 }
 .container {
   margin: 30px;
-  background-color: blueviolet;
+}
+
+select {
+  color: red;
+}
+
+option {
+  color: teal;
+  background-color: green;
 }
