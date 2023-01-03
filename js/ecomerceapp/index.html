@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Shop - ECommerce</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SHOP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control mr-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <button
+              class="btn btn-primary me-3 position-relative"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <i class="fas fa-shopping-cart"> </i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cartCount"
+              >
+                0
+                <span class="visually-hidden">shopping cart list count</span>
+              </span>
+            </button>
+          </div>
+          <!-- Right elements -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <div class="d-flex container-fluid">
+      <!-- Category -->
+      <div class="d-flex flex-column gap-2 categoryList w-25">
+        <!-- Category Item -->
+      </div>
+      <!-- Category -->
+      <!-- main container -->
+      <div class="w-75 my-5 productsEvent">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12">
+            <div class="row productList">
+              <!-- product list  -->
+              <!-- Loader -->
+              <div>
+                <div
+                  class="spinner-border text-warning"
+                  style="width: 5rem; height: 5rem"
+                  role="status"
+                >
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <h4>Уншиж байна</h4>
+              </div>
+              <!-- Loader -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main container -->
+
+    <!-- Shopping cart -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div
+        class="modal-dialog h-100 w-100 modal-dialog-scrollable position-fixed end-0 m-auto"
+      >
+        <div class="modal-content h-100">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Shopping Cart</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body cartList">
+            <!-- product item -->
+
+            <!-- product item -->
+          </div>
+          <div class="modal-footer">
+            <div
+              class="d-flex justify-content-between p-2 mb-2"
+              style="background-color: #e1f5fe"
+            >
+              <h5 class="fw-bold mb-0 me-1">Total:</h5>
+              <h5 class="fw-bold mb-0 cartPrice">$2261</h5>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="offcanvas"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shopping cart -->
+
+    <!-- scripts -->
+    <!-- BS Script files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Own Script files -->
+    <script src="./js/commerce.js"></script>
+  </body>
+</html>

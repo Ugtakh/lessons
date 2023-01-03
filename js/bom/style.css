@@ -1,0 +1,18 @@
+.blue {
+  color: salmon;
+}
+
+.btn {
+  padding: 20px;
+  border: 1px solid #edb212;
+  background-color: #ffdc7d;
+  margin-left: 25px;
+}
+
+.btn-color {
+  background-color: aqua;
+}
+
+.btn-salmon {
+  background-color: salmon;
+}

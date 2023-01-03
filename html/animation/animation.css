@@ -1,0 +1,64 @@
+.ball {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+  border-radius: 50%;
+  animation: anim1 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subBall {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: teal;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  animation: anime2 5s linear infinite;
+  position: absolute;
+}
+
+@keyframes anim1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anime2 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 400px;
+  }
+  50% {
+    top: 400px;
+    left: 400px;
+  }
+  75% {
+    top: 400px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

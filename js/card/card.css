@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 5);
+  height: 200px;
+  border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 2s;
+  margin: 20px;
+  transform-style: preserve-3d;
+}
+
+.inner-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: salmon;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+  transform: rotateY(180deg);
+}
+
+.rotate-card {
+  transform: rotateY(180deg);
+}
+
+.card-finish {
+  transform: rotateY(180deg);
+}
+
+.isFlipped {
+  transform: scale(0.8);
+}

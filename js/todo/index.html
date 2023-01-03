@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Todo List App</h1>
+    </header>
+    <div id="top-section">
+      <div style="display: flex; justify-content: space-between; gap: 50px">
+        <section>
+          <h3 id="date"><strong>Он сар өдөр:</strong></h3>
+        </section>
+        <section>
+          <h4 id="number-of-to-dos"></h4>
+        </section>
+      </div>
+
+      <div id="entry">
+        <div id="center-entry">
+          <input
+            autofill="off"
+            type="text"
+            id="to-do-input"
+            placeholder="Таскын нэрээ оруулна уу."
+          />
+          <select id="priority" name="priority" id="">
+            <option value="high">Чухал</option>
+            <option value="medium">дунд</option>
+            <option value="low">Бага</option>
+          </select>
+          <button id="add">+ нэмэх</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="tasks-list">
+        <div><h1>Жагсаалт</h1></div>
+        <div id="tasks"></div>
+      </section>
+    </main>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Status</td>
+            <td>Priority</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JS</td>
+            <td>true</td>
+            <td>high</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button onclick="ustgah(this)"></button>
+    <script src="./todo.js"></script>
+  </body>
+</html>
